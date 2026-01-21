@@ -56,6 +56,7 @@
 
 .post__like-btn_active {
   background: transparent url("../images/Unionasdf.svg");
+  background-repeat: no-repeat;
   opacity: 1;
 }
 

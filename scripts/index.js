@@ -147,9 +147,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const imageUrl = postImageInput.value.trim();
     const caption = postCaptionInput.value.trim();
 
-    console.log("New post image URL:", imageUrl);
-    console.log("New post caption:", caption);
-
     const cardElement = getCardElement({
       name: postCaptionInput.value,
       link: postImageInput.value,
