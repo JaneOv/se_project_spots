@@ -1,6 +1,7 @@
 .post {
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .post__image {
@@ -31,7 +32,7 @@
 }
 
 .post__like-btn {
-  background-image: url(../images/Union.svg);
+  background-image: url("../images/Union.svg");
   width: 23px;
   height: 20px;
   padding: 0;
@@ -39,10 +40,37 @@
   background-color: transparent;
   opacity: 40%;
   cursor: pointer;
+  margin: 0;
 }
 
 .post__like-btn:hover {
   opacity: 1;
+}
+
+.post__like-btn_active {
+  background: transparent url("../images/Unionasdf.svg");
+  opacity: 1;
+}
+
+.post__like-btn_active_liked:hover {
+  opacity: 50%;
+}
+
+.post__delete-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent url("../images/delete.svg");
+  cursor: pointer;
+}
+
+.post__delete-btn:hover {
+  background: transparent url("../images/State=Hover.png");
+  cursor: pointer;
 }
 
 @media screen and (max-width: 630px) {
